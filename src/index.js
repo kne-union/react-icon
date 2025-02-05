@@ -28,7 +28,7 @@ const Iconfont = ({ type, colorful = false, className, size, style, prefix = '',
     computedStyle = Object.assign({}, style, size ? { fontSize: calculateSize(size) } : {});
   return colorful ? (
     <svg {...other} className={computedClassName} style={computedStyle}>
-      <use xlinkHref={`#${type}`} style={{ pointerEvents: 'none' }} />
+      <use xlinkHref={`#${fontClass}`} style={{ pointerEvents: 'none' }} />
     </svg>
   ) : (
     <i {...other} className={computedClassName} style={computedStyle} />
