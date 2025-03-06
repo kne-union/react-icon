@@ -1,6 +1,6 @@
 {
   "name": "@kne/react-icon",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "用于将一个font或svg展示为一个图标组件.",
   "syntax": {
     "esmodules": true

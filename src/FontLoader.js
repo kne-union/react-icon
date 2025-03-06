@@ -1,8 +1,8 @@
-import { useCallback } from 'react';
+import { useEffect } from 'react';
 import loadFont from './loadFont';
 
 const FontLoader = ({ path, name }) => {
-  useCallback(() => {
+  useEffect(() => {
     const loadPromise = loadFont(path, name);
     return () => {
       loadPromise.then((uninstall) => {
